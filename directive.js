@@ -11,10 +11,10 @@ var directions = {
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1)
 }
+var handler = null;
+var evtType = '';
 const touchs = {
 	bind: function(el, binding) {
-		var handler = null;
-		var evtType = '';
 		if(!el.evt) {
 			el.evt = new Hammer.Manager(el)
 		}

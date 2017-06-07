@@ -6,7 +6,8 @@
 
 ``` bash
 # install dependencies
-npm install vue2-touch --save
+npm install https://github.com/LYDZYL/vue2-touch.git    --save
+或 yarn add https://github.com/LYDZYL/vue2-touch.git   
 ```
 
 ## Usage
@@ -22,7 +23,17 @@ Vue.use(Vue2Touch)
 
 ``` html
 <a v-touch:tap="callback">Tap me!</a>
+<button v-touch:tap="callback.bind(this,111,222,...)" >tapBtn</button>
 <div v-touch:swipe="callback">Swipe me!</div>
+
+methods: {
+			callback(arg1,arg2,evt) {
+				console.log('arg',arg1)//输出=> 111
+				console.log('args',arg2)//输出=> 222
+				console.log('evt',evt)//输出=> tap
+				console.log('event',event)// 输出=> PointerEvent{...}
+			}
+      }
 ```
 
 

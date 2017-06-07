@@ -2,7 +2,7 @@
   "name": "vue2-touch",
   "description": "A directive wrapper Hammerjs for vue2.x",
   "version": "1.0.5",
-  "author": "sam@thinkingsam.cn",
+  "author": "trsoliu",
   "main": "index.js",
   "scripts": {
   },

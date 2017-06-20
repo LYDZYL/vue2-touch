@@ -17,6 +17,7 @@ const touchs = {
 		var evtType = '';
 		if(!el.evt) {
 			el.evt = new Hammer.Manager(el)
+			el.evt.add(new Hammer.Pan({ threshold: 0, pointers: 0 }));
 		}
 		let evt = el.evt;
 		var type = evtType = binding.arg.toLowerCase()

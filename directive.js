@@ -39,13 +39,13 @@ const touchs = {
 		evt.add(new Hammer[capitalize(type)]())
 		// bind function
 		var evtsArray = directions[evtType]
-		console.log('evtsArray',evtsArray)
-    		console.log('handler',handler)
+// 		console.log('evtsArray',evtsArray)
+//     		console.log('handler',handler)
 		if(handler) {
 			evtsArray.forEach(function(et) {
 				evt.off(et, function(e) {
-					console.log('handler-et',et)
-        				console.log('handler-e',e)
+// 					console.log('handler-et',et)
+//         				console.log('handler-e',e)
 					handler(et, e)
 				})
 			})
